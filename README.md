@@ -32,6 +32,7 @@ npm install
 3. Set up MongoDB
 - Make sure MongoDB is running on your system
 - The application will connect to `mongodb://localhost:27017/carRental`
+- import ``` carRental.cars.json ``` in table using mongodb Compass
 
 4. Create admin user
 ```bash
@@ -127,14 +128,5 @@ The application will be available at `http://localhost:3000`
   - JWT (jsonwebtoken)
   - bcryptjs
 
-## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License.
