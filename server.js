@@ -40,7 +40,7 @@ const authenticateToken = (req, res, next) => {
 // Auth routes
 app.post('/api/register', async (req, res) => {
     try {
-        const { email, password } = req.body;
+        const { email, password, role } = req.body;
         
         // Check if user already exists
         const existingUser = await User.findOne({ email });
@@ -52,7 +52,7 @@ app.post('/api/register', async (req, res) => {
         const user = new User({
             email,
             password: hashedPassword,
-            role: req.body.role || 'user'
+            role: role || 'user'
         });
         
         await user.save();
@@ -92,7 +92,12 @@ app.post('/api/login', async (req, res) => {
             maxAge: 24 * 60 * 60 * 1000 // 24 hours
         });
         
-        res.json({ role: user.role });
+        // Send user data without sensitive information
+        res.json({
+            email: user.email,
+            role: user.role,
+            lastLogin: user.lastLogin
+        });
     } catch (error) {
         res.status(500).json({ message: 'Error logging in', error: error.message });
     }

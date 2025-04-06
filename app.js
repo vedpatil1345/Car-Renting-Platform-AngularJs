@@ -60,7 +60,7 @@ app.service('AuthService', function($http) {
 });
 
 app.controller('NavController', function($scope, $location, AuthService) {
-    $scope.user = null;
+    $scope.user = AuthService.getCurrentUser();
     
     $scope.$watch(function() {
         return AuthService.getCurrentUser();
@@ -69,7 +69,10 @@ app.controller('NavController', function($scope, $location, AuthService) {
     });
 
     $scope.getProfileLetter = function() {
-        return $scope.user ? $scope.user.email.charAt(0).toUpperCase() : '';
+        if ($scope.user && $scope.user.email) {
+            return $scope.user.email.charAt(0).toUpperCase();
+        }
+        return '';
     };
 
     $scope.logout = function() {
