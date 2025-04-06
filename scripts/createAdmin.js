@@ -10,8 +10,8 @@ async function createAdminUser() {
         });
 
         const adminData = {
-            email: "vedpatil1345@gmail.com",
-            password: "iaHzWYQY3tcvkZt",
+            email: "Your Email",
+            password: "password",
             role: "admin",
             createdAt: new Date(),
             lastLogin: null
