@@ -1,0 +1,24 @@
+<h2>Available Cars</h2>
+
+<div class="form-group">
+    <label>Sort by:</label>
+
+    <select class="form-control w-25" ng-model="selectedSort" aria-label="Sort options">
+        <option ng-repeat="option in sortOptions" value="{{option.value}}">
+            {{option.label}}
+        </option>
+    </select>
+</div>
+
+<div class="row">
+    <div class="col-md-4" ng-repeat="car in cars">
+        <div class="card car-card">
+            <img ng-src="{{car.image}}" class="card-img-top car-image" alt="{{car.name}}">
+            <div class="card-body">
+                <h5 class="card-title">{{car.name}}</h5>
+                <p class="card-text price">₹{{car.price}} per day</p>
+                <button class="btn btn-primary" ng-click="rentCar(car)">Rent Now</button>
+            </div>
+        </div>
+    </div>
+</div>

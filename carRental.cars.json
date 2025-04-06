@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "67e94b9909a87b16683681f7"
+  },
+  "name": "Creta",
+  "price": 500,
+  "image": "https://imgd.aeplcdn.com/642x361/n/cw/ec/168679/hyundai-creta-right-front-three-quarter0.jpeg",
+  "available": true,
+  "specifications": {},
+  "category": "economy",
+  "createdAt": {
+    "$date": "2025-03-30T13:48:09.663Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67e94bdc09a87b16683681fa"
+  },
+  "name": "Innova-Crysta",
+  "price": 1500,
+  "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Innova-Crysta/9612/1697698611076/front-left-side-47.jpg",
+  "available": true,
+  "specifications": {},
+  "category": "economy",
+  "createdAt": {
+    "$date": "2025-03-30T13:49:16.135Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67e94dbb09a87b166836821d"
+  },
+  "name": "ROLLS-ROYCE PHANTOM",
+  "price": 100000,
+  "image": "https://vehicle-images.dealerinspire.com/f484-110005271/SCATT6C06NU211732/dbdcf30bcef08a25fbd0658a61910897.jpg",
+  "available": true,
+  "specifications": {},
+  "category": "economy",
+  "createdAt": {
+    "$date": "2025-03-30T13:57:15.982Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67e94dfc09a87b166836822c"
+  },
+  "name": "Maruti 800",
+  "price": 100,
+  "image": "https://stimg2.cardekho.com/images/carNewsEditorImages/20150724_124337/16260/featured-advisory-stories0.jpg",
+  "available": true,
+  "specifications": {},
+  "category": "economy",
+  "createdAt": {
+    "$date": "2025-03-30T13:58:20.532Z"
+  },
+  "__v": 0
+}]
